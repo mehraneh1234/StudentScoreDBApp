@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Mehraneh - 30062786 - AT1-Activity6 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <!-- Edit text to enter Subject -->
+    <EditText
+        android:id="@+id/etSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Enter Subject"
+        android:textSize="20sp" />
+    <!-- Edit text to enter Score -->
+    <EditText
+        android:id="@+id/etScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Enter Score"
+        android:textSize="20sp" />
+    <!-- Button to add Subject and Score-->
+    <Button
+        android:id="@+id/btnAddSubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Add Subject and Score"
+        android:textSize="20sp" />
+    <!-- Button to delete a record by subject -->
+    <Button
+        android:id="@+id/btnDeleteSubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Delete a Record by Subject"
+        android:textSize="20sp" />
+    <!-- Button to update the score of a subject-->
+    <Button
+        android:id="@+id/btnUpdateScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Update the Score of a Subject"
+        android:textSize="20sp" />
+    <!-- Button to print Subjects -->
+    <Button
+        android:id="@+id/btnPrintSubjects"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Print All Subjects"
+        android:textSize="20sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!-- Text view: Id, Subject, Score -->
+            <TextView
+                android:id="@+id/tvSubjectRecord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20sp"
+                android:layout_weight="1"
+                android:padding="10sp"
+                android:text="Subjects:\n"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="22sp" />
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
